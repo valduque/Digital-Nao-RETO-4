@@ -1,9 +1,9 @@
 # RETO-4
 Non-Relational Databases for Storing JSON Data
 
-# 🍽️ Tattler Revamp Project
+# Tattler Revamp Project
 
-## 🌟 Overview
+##  Overview
 Tattler is a Mexican app that lists restaurants all over the country.  
 Recently, user traffic dropped a lot, so the goal of this project is to **bring it back to life** with a more modern and personalized version.
 
@@ -12,7 +12,7 @@ They team up to make Tattler smarter — an app that gives **personalized restau
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 ### General Objective
 Turn Tattler into a web app that gives users **personalized experiences** using current restaurant data and user preferences.
@@ -26,7 +26,7 @@ Turn Tattler into a web app that gives users **personalized experiences** using 
 
 ---
 
-## 🧩 Technologies
+##  Technologies
 - **Node.js** and **Express.js** for the API  
 - **MongoDB** for the database  
 - **Mongoose** for connecting to MongoDB  
