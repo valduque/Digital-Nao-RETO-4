@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "b48c2def-2af7-4241-8b02-72d67b771a75",
+		"name": "Tattler",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48954879",
+		"_collection_link": "https://valeria-duques99-1140542.postman.co/workspace/Valeria-Duque's-Workspace~abd13c9c-96a2-46c9-8534-6eedf97bc010/collection/48954879-b48c2def-2af7-4241-8b02-72d67b771a75?action=share&source=collection_link&creator=48954879"
+	},
+	"item": [
+		{
+			"name": "Obtener restaurantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear restaurante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Tacos estilo La Paz\",\r\n    \"tipoComida\": \"Mexicana\",\r\n    \"municipio\": \"Guadalajara\",\r\n    \"direccion\": \"Av. Siempre Viva 123\",\r\n    \"calificacion\": 4.5,\r\n    \"precioPromedio\": 120,\r\n    \"horario\": \"09:00-22:00\",\r\n    \"ubicacion\": { \"type\": \"Point\", \"coordinates\": [-103.4, 20.7] },\r\n    \"telefono\": \"3331234567\",\r\n    \"especialidades\": [\"tacos al pastor\",\"sopes\"]\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/restaurants",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants"
+					],
+					"query": [
+						{
+							"key": "municipio",
+							"value": "Guadalajara",
+							"disabled": true
+						},
+						{
+							"key": "minRating",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "10",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un restaurante",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/restaurants/68f55ea5c855802695ee45a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants",
+						"68f55ea5c855802695ee45a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/restaurants/68f55ea5c855802695ee45a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants",
+						"68f55ea5c855802695ee45a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Comida fueguito\",\r\n    \"tipoComida\": \"Mexicana\",\r\n    \"municipio\": \"Guadalajara\",\r\n    \"direccion\": \"Av. Siempre Viva 123\",\r\n    \"calificacion\": 4.8,\r\n    \"precioPromedio\": 120,\r\n    \"horario\": \"09:00-22:00\",\r\n    \"ubicacion\": { \"type\": \"Point\", \"coordinates\": [103.4, 20.7] },\r\n    \"telefono\": \"3331234567\",\r\n    \"especialidades\": [\"tacos al pastor\", \"sopes\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/restaurants/68f519d8d9e813742ce816f3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"restaurants",
+						"68f519d8d9e813742ce816f3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

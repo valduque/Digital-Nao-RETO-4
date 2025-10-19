@@ -1,0 +1,22 @@
+{
+  "name": "backend-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "run": "node ./src/app.js"
+  },
+  "author": "Valeria Duque",
+  "license": "ISC",
+  "dependencies": {
+    "express": "5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "mongodb": "^6.20.0"
+  
+  }
+}
